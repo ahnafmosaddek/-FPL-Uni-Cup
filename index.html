@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournament 2025</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Menu</h3>
+            <button class="menu-btn" data-section="home">Home</button>
+            <button class="menu-btn" data-section="fixtures">Fixtures</button>
+            <button class="menu-btn" data-section="results">Results</button>
+            <button class="menu-btn" data-section="points">Point Table</button>
+            <button class="menu-btn" data-section="teams">Teams</button>
+            <button class="menu-btn" data-section="knockout">Knockout</button>
+        </aside>
+        <main>
+            <header>
+                <div class="controls">
+                    <label class="switch">
+                        <input type="checkbox" id="dark-mode-toggle" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <h1>FPL Uni Cup</h1>
+                <p>Where battle on Trophy talks<button class="live">LIVE</button></p>
+            </header>
+            <section id="live-score">
+                <h2>Live Score</h2>
+                <div class="score-board">
+                    <button class="team-btn">A1</button>
+                    <span>vs</span>
+                    <div class="score">0 - 0</div>
+                    <span>Live</span>
+                    <button class="team-btn">A2</button>
+                </div>
+                <div class="live-status">
+                    <button class="live-btn">LIVE 0'</button>
+                    <span>Group A</span>
+                </div>
+            </section>
+            <section id="home" class="content hidden">
+                <h2>Home</h2>
+                <div id="home-content"></div>
+            </section>
+            <section id="fixtures" class="content hidden">
+                <h2>Fixtures</h2>
+                <div id="fixture-list"></div>
+            </section>
+            <section id="results" class="content hidden">
+                <h2>Results</h2>
+                <div id="result-list"></div>
+            </section>
+            <section id="points" class="content hidden">
+                <h2>Point Table</h2>
+                <div id="points-table"></div>
+            </section>
+            <section id="teams" class="content hidden">
+                <h2>Teams</h2>
+                <div id="team-list"></div>
+            </section>
+            <section id="knockout" class="content hidden">
+                <h2>Knockout</h2>
+                <div id="knockout-list"></div>
+            </section>
+            <script src="script.js"></script>
+        </main>
+    </div>
+</body>
+</html>
